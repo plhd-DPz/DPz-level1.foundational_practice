@@ -20,11 +20,11 @@ This repository contains small foundational exercises, homework tasks, and micro
 
 #Structure
 
-language/
+    language/
 
-    topic/
+        topic/
     
-        exercise_name
+            exercise_name
         
 #Philosophy
 
