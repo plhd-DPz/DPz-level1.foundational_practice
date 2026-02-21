@@ -3,10 +3,10 @@
 This repository contains small foundational exercises, homework tasks, and micro experiments created to strengthen core programming fundamentals.
 
 ## Purpose
-1. Master **basic syntax** across languages
-2. Practice **small isolated concepts**
-3. Experiment with **tools and environments**
-4. Track early **learning progress**
+- Master **basic syntax** across languages
+- Practice **small isolated concepts**
+- Experiment with **tools and environments**
+- Track early **learning progress**
 
 ## What belongs here
 
