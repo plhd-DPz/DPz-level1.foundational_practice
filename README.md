@@ -10,12 +10,9 @@ This repository contains small foundational exercises, homework tasks, and micro
 
 #What belongs here
 
--Very small exercises (typically under 100 lines)
-
--Syntax drills
-
--Basic data structure practice
-
+-Very small exercises (typically under 100 lines)  
+-Syntax drills  
+-Basic data structure practice  
 -Tool experiments (Git, Bash, CLI basics, etc.)
 
 #Structure
@@ -28,8 +25,6 @@ This repository contains small foundational exercises, homework tasks, and micro
         
 #Philosophy
 
-This repository focuses on depth over complexity.
-
-The goal is not to build large applications, but to build strong foundations.
-
+This repository focuses on depth over complexity.  
+The goal is not to build large applications, but to build strong foundations.  
 First level in my structured engineering growth roadmap.
