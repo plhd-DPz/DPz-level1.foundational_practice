@@ -4,4 +4,4 @@ Phần có màu(bên dưới đề bài) là chương trình. Đề có thể ch
 
 Các phần "` //_______________________________ `" là các ghi chú thêm, giải thích đề hoặc các lỗi có thể gặp(nếu có).
 
-Dùng tên file để tìm bài cho dễ. Tên đặt tiếng việt với các bài đề tiếng việt, tiếng anh với các bài đề tiếng anh, nếu đề yêu cầu hàm/hàm đệ quy/khai báo/... thì trong tên sẽ nêu rõ.
+Dùng tên file để tìm bài cho dễ. Tên đặt tiếng việt với các bài đề tiếng việt, tiếng anh với các bài đề tiếng anh, nếu đề yêu cầu hàm(function)/hàm đệ quy(recursive function)/khai báo/... thì trong tên sẽ nêu rõ.
