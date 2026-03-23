@@ -26,6 +26,7 @@ Ghi chú
 Gợi ý: 
 •	Chừa 5 chỗ để in các số.
 */
+
 #include <stdio.h>
 int main(){
 	int n;
