@@ -3,21 +3,15 @@ Viết chương trình nhập vào n số nguyên và cho biết những
 
 Đầu vào
 
-Dòng đầu tiên là n - số lượng các số nguyên (0 < n 
- 1000).
+Dòng đầu tiên là n - số lượng các số nguyên (0 < n <= 1000) 
 Dòng thứ hai chứa n số nguyên, mỗi số cách nhau khoảng trắng
 Đầu ra
 
 Dòng đầu tiên là n số nguyên đã nhập, mỗi số cách nhau khoảng trắng
 Dòng thứ 2 là số lượng các số nguyên lẻ 
 Dòng thứ 3 là các số nguyên lẻ đã nhập
-
-
-Ghi chú:
-
-Dữ liệu đầu vào là hợp lệ.
-Bạn không nên dùng printf trước scanf.
 */
+
 #include <stdio.h>
 int main(){
 	int n, i;
