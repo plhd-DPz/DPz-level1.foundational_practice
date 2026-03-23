@@ -18,11 +18,6 @@ In ra:
 Đầu ra
 •	Hiển thị tam giác Pascal như trên
 
-Ghi chú
-•	Dữ liệu đầu vào là hợp lệ.
-•	Bạn không cần dùng printf trước scanf.
-•	Xem ví dụ trong phần For Example để biết chi tiết về đầu vào/đầu ra.
-
 Gợi ý: 
 •	Chừa 5 chỗ để in các số.
 */
