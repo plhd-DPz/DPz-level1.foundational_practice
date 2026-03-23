@@ -16,10 +16,6 @@ return type: double
 Body
 
 recursively compute an- the nth power of a.
-Notes:
-
-Input is always valid.
-See examples for more details in input/output.
 */
 
 double power(float a, int n){
