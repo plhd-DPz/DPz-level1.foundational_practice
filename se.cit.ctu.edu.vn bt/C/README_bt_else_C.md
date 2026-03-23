@@ -1,4 +1,4 @@
-Đoạn nằm trong phần "` `/\*__________________\*/` `" là đề bài, được tô xám theo mặc định.
+Đoạn nằm trong phần "` `/`*`__________________`*`/` `" là đề bài, được tô xám theo mặc định.
 
 Phần có màu(bên dưới đề bài) là chương trình. Đề có thể chỉ yêu cầu viết hàm/khai báo, thì phần lời giải cũng sẽ chỉ có hàm/khai báo.
 
