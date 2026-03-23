@@ -11,10 +11,6 @@ Thân hàm (Body)
 
 Tính số hạng thứ n của dãy theo công thức trên bằng đệ quy hoặc vòng lặp
 
-
-Chú ý
-
-Giá trị của các tham số luôn hợp lệ, không cần kiểm tra.
 Chỉ viết hàm, KHÔNG VIẾT TOÀN BỘ CHƯƠNG TRÌNH
 */
 
