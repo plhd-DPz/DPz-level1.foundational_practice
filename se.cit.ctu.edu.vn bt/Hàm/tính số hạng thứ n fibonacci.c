@@ -16,7 +16,7 @@ Chú ý
 
 Giá trị của các tham số luôn hợp lệ, không cần kiểm tra.
 Chỉ viết hàm, KHÔNG VIẾT TOÀN BỘ CHƯƠNG TRÌNH
-  */
+*/
 
 int F(int n){
     int f0=1, f1=1, next;
