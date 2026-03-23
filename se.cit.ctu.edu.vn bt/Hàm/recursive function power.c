@@ -1,4 +1,5 @@
-/*Write a recursive function that computes an = a * a * ... * a (the product of multiplying n a's).
+/*
+Write a recursive function that computes an = a * a * ... * a (the product of multiplying n a's).
 
 Example:
 
@@ -18,7 +19,8 @@ recursively compute an- the nth power of a.
 Notes:
 
 Input is always valid.
-See examples for more details in input/output.*/
+See examples for more details in input/output.
+*/
 
 double power(float a, int n){
     if (n==0) return 1;
