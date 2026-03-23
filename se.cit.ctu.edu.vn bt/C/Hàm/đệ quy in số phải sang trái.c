@@ -11,13 +11,8 @@ Thân hàm (Body)
 
 In các chữ số của n theo thứ tự từ phải sang trái, mỗi chữ số cách nhau 1 khoảng trắng.
 
-
-Chú ý
-
-Giá trị của các tham số luôn hợp lệ, không cần kiểm tra.
 Chỉ viết hàm, KHÔNG VIẾT TOÀN BỘ CHƯƠNG TRÌNH
 Phải sử dụng đệ quy, không được dùng vòng lặp for, while, ...
-Xem thêm chi tiết trong phần For example.
 */
 
 void in_nguoc(int n){
