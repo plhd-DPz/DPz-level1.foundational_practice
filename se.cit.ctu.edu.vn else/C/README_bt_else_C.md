@@ -10,7 +10,7 @@ __________________________(nội dung)__________________________
 
 `````````````````````````````````````````````````````````````
 
-là đề bài(không bao gồm các phần thừa/lặp lại trong mô tả), được tô xám theo mặc định.
+là đề bài(đã bỏ bớt các phần thừa/lặp lại trong mô tả gốc ở bên else), được tô xám theo mặc định.
 
 Phần có màu(bên dưới đề bài) là chương trình. Đề có thể chỉ yêu cầu viết hàm/khai báo, thì phần lời giải cũng sẽ chỉ có hàm/khai báo.
 
