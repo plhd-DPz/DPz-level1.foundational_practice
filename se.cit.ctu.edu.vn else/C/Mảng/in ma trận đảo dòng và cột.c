@@ -1,4 +1,4 @@
-/*
+/*==========================================================
 Viết chương trình nhập một ma trận từ bàn phím và in ma trận theo thứ tự dòng thành cột và cột thành dòng.
 
 Input
@@ -8,7 +8,7 @@ m dòng kế tiếp chứa n số nguyên cách nhau bởi một khoảng trắn
 Output
 
 Hiển thị ma trận theo n dòng và m cột.
-*/
+==========================================================*/
 
 #include <stdio.h>
 int main(){

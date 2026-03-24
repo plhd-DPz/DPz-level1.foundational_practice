@@ -1,4 +1,4 @@
-/*
+/*==========================================================
 Write a recursive function that converts a decimal number into a binary number and prints the binary number.
 
 Prototype
@@ -10,7 +10,7 @@ return type: none
 Body
 
 recursively print the binary bits of n.
-*/
+==========================================================*/
 
 void dec2bin(int n){
     if (n==0) return;

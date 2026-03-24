@@ -1,4 +1,4 @@
-/*
+/*==========================================================
 An Armstrong number of k digits is an positive integer such that the sum of the kth power of its digits is equal to the number itself.
 
 Example:
@@ -15,7 +15,7 @@ return type: integer
 Body
 
 return 1 if n is an Armstrong number, otherwise return 0.
-*/
+==========================================================*/
 
 int is_Armstrong(int n){
     int n0=n, sum=0, digit=0;

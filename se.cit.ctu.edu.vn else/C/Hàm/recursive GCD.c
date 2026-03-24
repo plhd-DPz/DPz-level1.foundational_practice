@@ -1,4 +1,4 @@
-/*
+/*==========================================================
 Write a recursive function to find the Greatest Common Divisor (GCD) of two numbers a and b.
 
 Prototype
@@ -9,7 +9,7 @@ return type: int
 Body
 
 compute the greatest common divisor of a and b.
-*/
+==========================================================*/
 
 #include <stdlib.h>
 int GCD(int a, int b){

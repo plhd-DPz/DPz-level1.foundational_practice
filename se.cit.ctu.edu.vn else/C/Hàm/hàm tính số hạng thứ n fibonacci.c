@@ -1,4 +1,4 @@
-/*
+/*==========================================================
 Viết 1 hàm tính số hạng thứ n (0<=n<=40) của dãy Fibonaci theo công thức sau:
 
 Khuôn dạng (Prototype)
@@ -12,7 +12,7 @@ Thân hàm (Body)
 Tính số hạng thứ n của dãy theo công thức trên bằng đệ quy hoặc vòng lặp
 
 Chỉ viết hàm, KHÔNG VIẾT TOÀN BỘ CHƯƠNG TRÌNH
-*/
+==========================================================*/
 
 int F(int n){
     int f0=1, f1=1, next;

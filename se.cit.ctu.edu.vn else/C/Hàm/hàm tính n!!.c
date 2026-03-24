@@ -1,4 +1,4 @@
-/*
+/*==========================================================
 Viết hàm tính n!! (0<=n<=25) theo công thức sau:
 n!!=1*3*5*...*n, n lẻ; 2*4*6*...*n, n chẵn
 Khuôn dạng (Prototype)
@@ -10,7 +10,7 @@ Kiểu trả về (return type): long long
 Thân hàm (Body)
 
 Áp dụng công thức trên để tính giá trị của n!!
-*/
+==========================================================*/
 
 long long Factorial2(int n){
     int i;

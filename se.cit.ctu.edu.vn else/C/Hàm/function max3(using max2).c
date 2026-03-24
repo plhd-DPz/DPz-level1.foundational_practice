@@ -1,4 +1,4 @@
-/*
+/*==========================================================
 You are given a function
 
 int max2(int a, int b);
@@ -14,7 +14,7 @@ return type: integer
 Body
 
 return the biggest among a, b and c.
-*/
+==========================================================*/
 
 int max3(int a, int b, int c) {
     return max2(max2(a, b), c);  

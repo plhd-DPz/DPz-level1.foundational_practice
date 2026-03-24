@@ -1,4 +1,4 @@
-/*
+/*==========================================================
 Tam giác Pascal là một bảng số, trong đó dòng thứ 0 bằng 1, mỗi một số hạng của dòng thứ n+1 là một tổ hợp chập k của n, trong đó  được tính bằng đệ quy hoặc theo công thức:
 .
 Viết chương trình hiển thị tam giác Pascal có n+1 dòng với n được đọc từ bàn phím.
@@ -20,7 +20,7 @@ In ra:
 
 Gợi ý: 
 •	Chừa 5 chỗ để in các số.
-*/
+==========================================================*/
 
 #include <stdio.h>
 int main(){

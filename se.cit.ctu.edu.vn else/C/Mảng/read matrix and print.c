@@ -1,4 +1,4 @@
-/*
+/*==========================================================
 Write a program to read a matrix of integer numbers and print it to the screen.
 
 Input
@@ -8,7 +8,7 @@ m following lines, each contains n numbers, separated by a space.
 Output
 
 print the matrix to the screen.
-*/
+==========================================================*/
 
 #include <stdio.h>
 int main(){

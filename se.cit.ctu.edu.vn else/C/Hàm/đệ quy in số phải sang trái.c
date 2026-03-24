@@ -1,4 +1,4 @@
-/*
+/*==========================================================
 Viết hàm đệ quy để in các chữ số của số nguyên theo thứ tự từ phải sang trái.
 
 Khuôn dạng (Prototype)
@@ -13,7 +13,7 @@ In các chữ số của n theo thứ tự từ phải sang trái, mỗi chữ s
 
 Chỉ viết hàm, KHÔNG VIẾT TOÀN BỘ CHƯƠNG TRÌNH
 Phải sử dụng đệ quy, không được dùng vòng lặp for, while, ...
-*/
+==========================================================*/
 
 void in_nguoc(int n){
     if (n==0) return;

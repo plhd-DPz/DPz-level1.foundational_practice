@@ -1,4 +1,4 @@
-/*
+/*==========================================================
 Cho m, n nguyên dương. Lập hàm đệ quy để tính hàm Ackermann được cho như sau:(công thức trong đề) với (0<=m,n<=4)
 Khuôn dạng (Prototype)
 
@@ -10,7 +10,7 @@ Kiểu trả về (return type): int
 Thân hàm (Body)
 
 Áp dụng công thức đệ quy trên để tính giá trị của hàm Ackermann
-*/
+==========================================================*/
 
 int A(int m, int n){
     if (m==0) return n+1;

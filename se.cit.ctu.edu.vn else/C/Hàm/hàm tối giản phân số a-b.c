@@ -1,4 +1,4 @@
-/*
+/*==========================================================
 Viết hàm tối giản phân số a/b và in ra phân số tối giản.
 
 Khuôn dạng (Prototype)
@@ -12,7 +12,7 @@ Kiểu trả về (return type): không
 Thân hàm (Body)
 
 Tối giản phân số a/b và in phân số tối giản theo mẫu: a/b = u/v, với u/v là phân số tối giản của phân số a/b.
-*/
+==========================================================*/
 
 void reduce(int a, int b){
     int r, a0=a, b0=b;

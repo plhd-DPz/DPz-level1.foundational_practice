@@ -1,4 +1,4 @@
-/*
+/*==========================================================
 Write a recursive function that computes the number of digits of a number.
 
 Prototype
@@ -10,7 +10,7 @@ return type: int
 Body
 
 recursively compute the number of digits of n.
-*/
+==========================================================*/
 
 #include <stdlib.h>
 int NumDigits(int n){

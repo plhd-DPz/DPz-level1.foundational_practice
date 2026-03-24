@@ -1,4 +1,4 @@
-/*
+/*==========================================================
 Viết chương trình nhập vào n số nguyên và cho biết những số nguyên lẻ trong đã nhập
 
 Đầu vào
@@ -10,7 +10,7 @@ Dòng thứ hai chứa n số nguyên, mỗi số cách nhau khoảng tr�
 Dòng đầu tiên là n số nguyên đã nhập, mỗi số cách nhau khoảng trắng
 Dòng thứ 2 là số lượng các số nguyên lẻ 
 Dòng thứ 3 là các số nguyên lẻ đã nhập
-*/
+==========================================================*/
 
 #include <stdio.h>
 int main(){

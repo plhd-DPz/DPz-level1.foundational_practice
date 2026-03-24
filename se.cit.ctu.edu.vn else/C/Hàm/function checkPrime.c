@@ -1,4 +1,4 @@
-/*
+/*==========================================================
 Write a C function that check whether a number is prime or not.
 
 Prototype
@@ -10,7 +10,7 @@ Body
 
 check whether p is a prime
 return 1 if p is a prime, otherwise return 0
-*/
+==========================================================*/
 
 #include <math.h>
 int checkPrime(long long p){

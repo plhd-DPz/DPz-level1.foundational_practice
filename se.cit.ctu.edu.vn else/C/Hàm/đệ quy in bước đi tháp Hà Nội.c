@@ -1,4 +1,4 @@
-/*
+/*==========================================================
 Có 3 cây cọc và một chồng n đĩa có kích thước từ nhỏ đến lớn (không trùng kích thước). Các đĩa đều có lỗ bên trong để chồng vào các cây cọc. 
 Ban đầu n đĩa được chồng vào cây cọc thứ nhất, đĩa lớn nhất ở dưới, và kích thước đĩa giảm dần từ dưới lên: (hình)
 
@@ -19,7 +19,7 @@ Kiểu trả về (return type): void
 Thân hàm (Body)
 
 Dùng đệ quy để mô tả các bước chuyển đĩa.
-*/
+==========================================================*/
 
 void Move(int n, char a, char b, char c){
     if (n==1){

@@ -1,4 +1,4 @@
-/*
+/*==========================================================
 Write a C function that takes 2 integer numbers and returns the bigger.
 
 Prototype
@@ -9,7 +9,7 @@ return type: integer
 Body
 
 return the bigger between a and b.
-*/
+==========================================================*/
 
 int max2(int a, int b){
     if (a>b) return a;

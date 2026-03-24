@@ -1,4 +1,4 @@
-/*
+/*==========================================================
 Viết chương trình tìm kiếm và thay thế tất cả các giá trị X trong mảng số nguyên A thành giá trị Y.
 
 Đầu vào
@@ -10,7 +10,7 @@ Dòng thứ ba là 2 giá trị X,Y; mỗi giá trị cách nhau khoảng
 
 Dòng đầu tiên là n số nguyên đã nhập, mỗi số cách nhau khoảng trắng
 Dòng thứ 2 là các số nguyên sau khi đã thay thế các giá trị X thành Y
-*/
+==========================================================*/
 
 #include <stdio.h>
 int main(){

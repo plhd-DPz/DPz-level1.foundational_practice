@@ -1,4 +1,4 @@
-/*
+/*==========================================================
 You are given a function
 
 int isPrime(int n);
@@ -14,7 +14,7 @@ return type: none
 Body
 
 print prime numbers between a and b in one line, separated by a space.
-*/
+==========================================================*/
 
 void printPrimeNumbers(int a, int b){
     for (int i=a;i<=b;i++){

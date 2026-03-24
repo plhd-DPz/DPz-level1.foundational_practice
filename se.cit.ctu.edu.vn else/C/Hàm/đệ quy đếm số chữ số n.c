@@ -1,4 +1,4 @@
-/*
+/*==========================================================
 Viết hàm đệ quy đếm số chữ số của số nguyên dương n > 0.
 
 Khuôn dạng (Prototype)
@@ -10,7 +10,7 @@ Kiểu trả về (return type): int
 Thân hàm (Body)
 
 Tìm số chữ số của n.
-*/
+==========================================================*/
 
 int count(int n){
     if (n==0) return 0;

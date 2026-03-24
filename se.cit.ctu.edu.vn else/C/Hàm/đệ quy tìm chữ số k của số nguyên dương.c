@@ -1,4 +1,4 @@
-/*
+/*==========================================================
 Viết hàm đệ quy để tìm chữ số thứ k của số nguyên dương (theo thứ tự từ phải sang trái). 
 Chữ số ở hàng đơn vị là là chữ số thứ 0, chữ số ở hàng chục là chữ số thứ 1, ...
 
@@ -20,7 +20,7 @@ Kiểu trả về (return type): int
 Thân hàm (Body)
 
 Tìm và trả về chữ số thứ k của số n (tính từ phải sang trái).
-*/
+==========================================================*/
 
 int kth_digit(int n, int k){
     if (k==0) return n%10;

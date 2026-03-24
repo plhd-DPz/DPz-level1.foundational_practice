@@ -1,4 +1,4 @@
-/*
+/*==========================================================
 Viết chương trình nhập vào n số nguyên và cho biết giá trị lớn nhất, giá trị nhỏ nhất trong mảng
 
 Đầu vào
@@ -9,7 +9,7 @@ Dòng thứ hai chứa n số nguyên, mỗi số cách nhau khoảng tr�
 
 Dòng đầu tiên là n số nguyên đã nhập, mỗi số cách nhau khoảng trắng
 Dòng thứ 2 là giá trị nhỏ nhất và giá trị lớn nhất, mỗi giá trị cách nhau khoảng trắng
-*/
+==========================================================*/
 
 #include <stdio.h>
 #include <limits.h>

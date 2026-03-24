@@ -1,4 +1,4 @@
-/*
+/*==========================================================
 Viết hàm kiểm tra số n có phải là số hoàn thiện không.
 
 Khuôn dạng (Prototype)
@@ -11,7 +11,7 @@ Thân hàm (Body)
 
 Nếu n là số hoàn thiện trả về 1
 Ngược lại trả về 0.
-*/
+==========================================================*/
 
 int isPerfect(int n){
     int i, sum=1;

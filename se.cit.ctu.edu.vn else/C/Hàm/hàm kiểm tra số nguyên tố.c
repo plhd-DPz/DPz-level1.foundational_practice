@@ -1,4 +1,4 @@
-/*
+/*==========================================================
 Viết hàm kiểm tra số n có phải là số nguyên tố không.
 
 Khuôn dạng (Prototype)
@@ -11,7 +11,7 @@ Thân hàm (Body)
 
 Nếu n là số nguyên tố trả về 1
 Ngược lại trả về 0.
-*/
+==========================================================*/
 
 #include <math.h>
 int isPrime(int n){
