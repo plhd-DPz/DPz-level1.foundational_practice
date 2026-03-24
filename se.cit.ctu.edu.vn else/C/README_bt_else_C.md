@@ -1,4 +1,4 @@
-<img width="1150" height="568" alt="image" src="https://github.com/user-attachments/assets/5838e547-0827-433a-867a-c456de138a78" />Đoạn nằm trong phần 
+Đoạn nằm trong phần 
 
 `/*==========================================================
 
