@@ -1,12 +1,9 @@
 /*==========================================================
 Số chính phương là số là cân bậc 2 của một số tự nhiên (hay là bình phương của 1 số tự nhiên). Viết hàm cho phép kiểm tra số nguyên dương n đầu vào có là số chính phương hay không?
 
-   Ví dụ:   9  là số chính phương vì 
-
-              10 không là số chính phương vì 
+   Ví dụ:   9  là số chính phương vì (xem thêm đề)
+            10 không là số chính phương vì (xem thêm đề)
  
-
-
 Khuôn dạng (Prototype)
 
 Tên hàm (function name): isSquareNumber()
