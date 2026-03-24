@@ -1,5 +1,9 @@
 /*==========================================================
-The normal year contains 365 days but leap year contains 366 days. This extra day is added to the February month, that’s why we get February 29. Mathematically, Years that are perfectly divisible by 4 are called as Leap years except the century years. Century year’s means they end with 00 such as 1200, 1300, 2400, 2500 etc (Obviously they are divisible by 100). For these century years we have to calculate further to check the Leap year.
+The normal year contains 365 days but leap year contains 366 days. 
+This extra day is added to the February month, that’s why we get February 29. 
+Mathematically, Years that are perfectly divisible by 4 are called as Leap years except the century years. 
+Century year’s means they end with 00 such as 1200, 1300, 2400, 2500 etc (Obviously they are divisible by 100). 
+For these century years we have to calculate further to check the Leap year.
 
 If the century year is divisible by 400 then that year is a Leap year
 If the century year is not divisible by 400 then that year is a Leap year
