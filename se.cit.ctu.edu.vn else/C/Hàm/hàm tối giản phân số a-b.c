@@ -6,8 +6,7 @@ Khuôn dạng (Prototype)
 Tên hàm (function name): reduce
 Tham số (parameters):
 a - tử số, kiểu: int
-b - mẫu số, kiểu: int (
-)
+b - mẫu số, kiểu: int (a,b...)
 Kiểu trả về (return type): không
 Thân hàm (Body)
 
