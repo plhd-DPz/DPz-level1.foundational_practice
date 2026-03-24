@@ -1,4 +1,12 @@
-Đoạn nằm trong phần "` /*__________________*/ `" là đề bài(không bao gồm các phần thừa/lặp lại trong mô tả), được tô xám theo mặc định.
+<img width="1150" height="568" alt="image" src="https://github.com/user-attachments/assets/5838e547-0827-433a-867a-c456de138a78" />Đoạn nằm trong phần 
+
+`/*==========================================================
+
+__________________________(nội dung)__________________________
+
+==========================================================*/`
+
+là đề bài(không bao gồm các phần thừa/lặp lại trong mô tả), được tô xám theo mặc định.
 
 Phần có màu(bên dưới đề bài) là chương trình. Đề có thể chỉ yêu cầu viết hàm/khai báo, thì phần lời giải cũng sẽ chỉ có hàm/khai báo.
 
