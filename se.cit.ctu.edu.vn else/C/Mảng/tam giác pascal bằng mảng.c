@@ -28,3 +28,5 @@ int main(){
 	}
 	return 0;
 }
+
+//lưu ý: gọi long long a[n][n], đừng gọi int, vì nếu n=40 thì a rất lớn
