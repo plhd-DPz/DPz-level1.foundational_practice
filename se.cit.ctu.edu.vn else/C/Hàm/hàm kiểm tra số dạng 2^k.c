@@ -16,10 +16,9 @@ Ngược lại trả về 0.
 ==========================================================*/
 
 int isPower2(int n){
-    int a=1, k=0;
+    int a=1;
     while (a<n){
         a*=2;
-        k++;
     }
     if (a==n) return 1;
     return 0;
