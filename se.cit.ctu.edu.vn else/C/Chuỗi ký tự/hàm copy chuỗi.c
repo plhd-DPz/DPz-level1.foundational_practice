@@ -22,3 +22,11 @@ void mystrcpy(char *s1, char *s2){
     *(s2+i)='\0'; //i chứ không phải i-1 vì hết vòng lặp đã là cuối
     return;
 }
+
+
+//dưới đây là 1 hướng giải nhanh bài này, chỉ để tham khảo thôi chứ khó hiểu hơn cách trên
+
+//void mystrcpy(char *s1, char *s2){
+//   while ((*s2++=*s1++) != '\0');   //*s2, *s1 tăng dần, copy cho đến khi đã copy \0
+//    return;                         //while với lệnh trong điều kiện nên ; ở cuối
+//}
