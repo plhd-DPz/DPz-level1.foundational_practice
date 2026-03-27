@@ -20,7 +20,7 @@ int main(){
     int len=strlen(s);
     if (s[len-1]=='\n'){
         s[len-1]='\0';
-        len--;
+        len--;   //phải len-- để trừ đi \n(do strlen đếm cả \n)
     }
     puts(s);
     for (int l=0,r=len-1;l<r;l++,r--){ //kĩ thuật 2 pointers

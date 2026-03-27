@@ -13,24 +13,18 @@ Mỗi từ của chuỗi nhập được hiển thị trên một dòng khác nh
 #include <string.h>
 int main(){
     char s[500];
-    fgets(s, 500 ,stdin);
-    int i=0, len=strlen(s);
+    fgets(s,500,stdin);
+    int len=strlen(s);
     if (s[len-1]=='\n'){
         s[len-1]='\0';
         len--;
     }
-    int first=0;
-    while (s[i]!='\0'){
-        if (first==0 && s[i]==' '){
-            i++; //tránh lặp vô hạn khi test chỉ nhập mỗi dấu cách
-            continue;
-        }
-        else first++;
-        if (s[i]!=' ') printf("%c", s[i]);
-        else{
-            if (s[i+1]!=' ') printf("\n");
-        }
-        i++;
+    int i, space=1;  //space=1 là cách xử lí nhanh việc in thừa \n nếu test nhập dấu cách trước
+    for (i=0;i<len;i++){
+        if (s[i]==' ') space++;  //đếm số lượng space liên tiếp nhau
+        else space=0;
+        if (!space) printf("%c",s[i]);  //không phải space thì in kí tự đó ra
+        else if (space==1) printf("\n");  //đảm bảo rằng chỉ có space đầu tiên in xuống dòng
     }
     return 0;
 }
