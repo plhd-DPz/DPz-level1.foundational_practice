@@ -97,19 +97,19 @@ void normalize(List *pL){
     }
 }
 void sort(List *pL){
-    Position p, q, min;
-
-    for(p = (*pL)->Next; p != NULL; p = p->Next){
-        min = p;
-
-        for(q = p->Next; q != NULL; q = q->Next){
-            if(q->Element < min->Element)
-                min = q;
+    if (*pL == NULL || (*pL)->Next == NULL) return;
+    Position p = (*pL)->Next;
+    while (p != NULL){
+        Position q = p->Next;
+        while (q != NULL){
+            if (p->Element > q->Element){
+                int t = p->Element;
+                p->Element = q->Element;
+                q->Element = t;
+            }
+            q = q->Next;
         }
-
-        int t = p->Element;
-        p->Element = min->Element;
-        min->Element = t;
+        p = p->Next;
     }
 }
 float getAvg(List L){
