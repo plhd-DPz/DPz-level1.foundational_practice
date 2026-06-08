@@ -112,7 +112,8 @@ void sort(List *pL){
         min->Element = t;
     }
 }
-float getAVG(List L){
+float getAvg(List L){
+    if (L->Next==NULL) return -10000.00000;
     float sum=0, cnt=0;
     while (L->Next!=NULL){
         sum+=L->Next->Element;
