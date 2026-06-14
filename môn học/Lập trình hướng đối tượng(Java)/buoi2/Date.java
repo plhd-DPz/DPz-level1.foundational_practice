@@ -34,21 +34,30 @@ public class Date {
 			m=sc.nextInt();
 			System.out.println("Nhap nam: ");
 			y=sc.nextInt();
-		} while (!hople());
+		} while (!hopLe());
 	}
-	public boolean hople() {
+	public int layNgay() {
+		return d;
+	}
+	public int layThang() {
+		return m;
+	}
+	public int layNam() {
+		return y;
+	}
+	public boolean hopLe() {
 		int max[]= {0,31,28,31,30,31,30,31,31,30,31,30,31};
 		if ((y%4==0 && y%100!=0) || y%400==0) max[2]=29;
-		if (d>0&&m>0&&y>0&&m<13&&d<max[m]) return true;
+		if (d>0 && m>0 && y>0 && m<13 && d<=max[m]) return true;
 		else return false;
 	}
 	public Date cong() {
-		Date a=new Date(d,m,y);
+		Date a=new Date(this);
 		a.d++;
-		if(!hople()) {
+		if(!a.hopLe()) {
 			a.m++;
 			a.d=1;
-			if(!hople()) {
+			if(!a.hopLe()) {
 				a.y++;
 				a.m=1;
 			}
@@ -61,5 +70,64 @@ public class Date {
 			a=a.cong();
 		}
 		return a;
+	}
+	public boolean ngayTruoc(Date a) {
+		if (y!=a.y) return y<a.y;
+		if (m!=a.m) return m<a.m;
+		return d<a.d;
+	}
+	public boolean equals(Date a) {
+	    return d == a.d && m == a.m && y == a.y;
+	}
+	public int khoangCachTuMoc() {
+	    Date moc = new Date(8,6,2026);     //biết 8/6/2026 là thứ 2
+	    if (this.equals(moc))
+	        return 0;
+	    int dem = 0;
+	    if (moc.ngayTruoc(this)) {
+	        Date a = new Date(moc);
+	        while (!a.equals(this)) {
+	            a = a.cong();
+	            dem++;
+	        }
+	        return dem;
+	    }
+	    Date a = new Date(this);
+	    while (!a.equals(moc)) {
+	        a = a.cong();
+	        dem++;
+	    }
+	    return -dem;
+	}
+	public String thu() {
+	    String t[] = {"", "Thu hai", "Thu ba", "Thu tu", "Thu nam", "Thu sau", "Thu bay", "Chu nhat"};
+	    int thu = ((khoangCachTuMoc() % 7) + 7) % 7 + 1; //quy ước Thứ 2 là 1
+	    return t[thu];
+	}
+	public String thu(int n) {  //n ngày nữa là thứ mấy tính từ ngày 8/6/2026
+		String t[] = {"", "Thu hai", "Thu ba", "Thu tu", "Thu nam", "Thu sau", "Thu bay", "Chu nhat"};
+	    int k = ((n % 7) + 7) % 7 + 1;
+	    return t[k];
+	}
+	public int soNgayTrongThang() {
+	    int max[] = {0,31,28,31,30,31,30,31,31,30,31,30,31};
+	    if ((y % 4 == 0 && y % 100 != 0) || y % 400 == 0)
+	        max[2] = 29;
+	    return max[m];
+	}
+	public void inThang() {
+	    int thuDau = khoangCachTuMoc();
+	    thuDau = ((thuDau % 7) + 7) % 7 + 1;
+	    System.out.println("\nTHANG " + m + "/" + y);
+	    System.out.println(" T2  T3  T4  T5  T6  T7  CN");
+	    for (int i = 1; i < thuDau; i++)
+	        System.out.print("    ");
+	    int sn = soNgayTrongThang();
+	    for (int i = 1; i <= sn; i++) {
+	        System.out.printf("%3d ", i);
+	        if ((i + thuDau - 1) % 7 == 0)
+	            System.out.println();
+	    }
+	    System.out.println();
 	}
 }

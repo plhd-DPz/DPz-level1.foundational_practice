@@ -27,9 +27,9 @@ public class Diem {
 	}
 	public void nhap() {
 		Scanner sc=new Scanner(System.in);
-		System.out.println("\nNhap x= ");
+		System.out.print("\nNhap x = ");
 		x=sc.nextInt();
-		System.out.println("\nNhap y= ");
+		System.out.print("\nNhap y = ");
 		y=sc.nextInt();
 	}
 	public void gan(int x1, int y1) {
