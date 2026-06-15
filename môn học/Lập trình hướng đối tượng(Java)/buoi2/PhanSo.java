@@ -32,11 +32,11 @@ public class PhanSo {
 		}
 	}
 	public String toString() {
-		if (tuSo==0) return "Phan so la: 0\n";
-		else if (mauSo==1) return "Phan so la: "+ tuSo;
+		if (tuSo==0) return "0\n";
+		else if (mauSo==1) return String.valueOf(tuSo);
 		else {
-			if(tuSo*mauSo < 0) return "Phan so la: -"+Math.abs(tuSo)+"/"+Math.abs(mauSo);
-			else return "Phan so la: "+Math.abs(tuSo)+"/"+Math.abs(mauSo);
+			if(tuSo*mauSo < 0) return Math.abs(tuSo)+"/"+Math.abs(mauSo);
+			else return Math.abs(tuSo)+"/"+Math.abs(mauSo);
 		}
 	}
 	public void nhap() {
