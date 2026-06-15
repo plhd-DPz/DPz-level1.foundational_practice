@@ -51,7 +51,7 @@ public class PhanSo {
 	}
 	public void nghichDao() {
 		if (tuSo==0) {
-			System.out.println("Khong the nghich dao vi tu so bang 0");
+			System.out.println("Khong the nghich dao vi tu so bang 0.");
 			return;
 		}
 		int temp=tuSo;
@@ -60,7 +60,7 @@ public class PhanSo {
 	}
 	public PhanSo giaTriNghichDao() {
 		if (tuSo==0) {
-			System.out.println("Khong the nghich dao vi tu so bang 0");
+			System.out.println("Khong the nghich dao vi tu so bang 0.");
 			return new PhanSo(this);
 		}
 		PhanSo a=new PhanSo();
