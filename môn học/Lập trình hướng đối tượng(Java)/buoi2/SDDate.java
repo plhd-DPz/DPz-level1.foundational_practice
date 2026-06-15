@@ -6,9 +6,15 @@ public class SDDate {
 
 	public static void main(String[] args) {
 		Date a=new Date(8,6,2026);
+		//BTVN: in lịch năm 2027
+		Date temp=new Date();
+		System.out.println("Lich nam 2027: ");
+		temp.inNam(2027);
+		Date ds[];
 		System.out.println("Ngay a: "+a);
 		System.out.println(a + " la " + a.thu());
 		Date b=new Date();
+		System.out.println("Nhap ngay b: ");
 		b.nhap();
 		b.in();
 		System.out.println("ngay sau khi cong 32000 ngay: ");
@@ -16,7 +22,6 @@ public class SDDate {
 		b.in();
 		//BTVN: hôm nay thứ 2 ngày 8/6/2026, 125 ngày nữa là thứ mấy?
 		System.out.println("125 ngay sau 8/6/2026 la " + a.thu(125));
-		Date ds[];
 		Scanner sc=new Scanner(System.in);
 		System.out.print("Nhap so phan tu cho mang cac ngay: ");
 		int n=sc.nextInt();
@@ -40,10 +45,6 @@ public class SDDate {
 		for (Date e : ds) {
 			if (e.ngaySau(moc)) e.in();
 		}
-		//BTVN: in lịch năm 2027
-		Date temp=new Date();
-		System.out.println("\nLich nam 2027: ");
-		temp.inNam(2027);
 	}
 
 }
