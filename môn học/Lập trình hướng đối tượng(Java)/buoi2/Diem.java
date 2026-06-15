@@ -19,37 +19,37 @@ public class Diem {
 		x=a.x;
 		y=a.y;
 	}
-	public void in() {
+	public void nhapDiem() {
+		Scanner sc=new Scanner(System.in);
+		System.out.print("\nNhap toa do x = ");
+		x=sc.nextInt();
+		System.out.print("\nNhap toa do y = ");
+		y=sc.nextInt();
+	}
+	public void hienThi() {
 		System.out.println("("+x+","+y+")");
 	}
 	public String toString() {
 		return "("+x+","+y+")";
 	}
-	public void nhap() {
-		Scanner sc=new Scanner(System.in);
-		System.out.print("\nNhap x = ");
-		x=sc.nextInt();
-		System.out.print("\nNhap y = ");
-		y=sc.nextInt();
-	}
 	public void gan(int x1, int y1) {
 		x=x1;
 		y=y1;
 	}
-	public void tinhTien(int dx, int dy) {
+	public void doiDiem(int dx, int dy) {
 		x=x+dx;
 		y=y+dy;
 	}
-	public float kcach() {
+	public float khoangCach() {
 		return (float)Math.sqrt(x*x+y*y);
 	}
-	public float kcach(Diem b) {
-		return (float)Math.sqrt(Math.pow(x-b.x,2)+Math.pow(y-b.y, 2));
+	public float khoangCach(Diem d) {
+		return (float)Math.sqrt(Math.pow(x-d.x,2)+Math.pow(y-d.y,2));
 	}
-	public int layX() {
+	public int giaTriX() {
 		return x;
 	}
-	public int layY() {
+	public int giaTriY() {
 		return y;
 	}
 	public void TrungDiem(Diem b) {
