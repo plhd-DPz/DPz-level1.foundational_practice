@@ -83,11 +83,16 @@ public class Date {
 		if (m!=a.m) return m<a.m;
 		return d<a.d;
 	}
+	public boolean ngaySau(Date a) {
+		if (y!=a.y) return y>a.y;
+		if (m!=a.m) return m>a.m;
+		return d>a.d;
+	}
 	public boolean equals(Date a) {
 	    return d == a.d && m == a.m && y == a.y;
 	}
 	public int khoangCachTuMoc() {
-	    Date moc = new Date(8,6,2026);     //biết 8/6/2026 là thứ 2
+	    Date moc = new Date(8,6,2026);
 	    if (this.equals(moc))
 	        return 0;
 	    int dem = 0;
@@ -108,14 +113,16 @@ public class Date {
 	}
 	public String thu() {
 	    String t[] = {"", "Thu hai", "Thu ba", "Thu tu", "Thu nam", "Thu sau", "Thu bay", "Chu nhat"};
-	    int thu = ((khoangCachTuMoc() % 7) + 7) % 7 + 1; //quy ước Thứ 2 là 1
+	    int thu = ((khoangCachTuMoc() % 7) + 7) % 7 + 1; 
 	    return t[thu];
 	}
-	public String thu(int n) {  //n ngày nữa là thứ mấy tính từ ngày 8/6/2026
+	//BTVN: n ngày nữa là thứ mấy tính từ ngày 8/6/2026, biết 8/6/2026 là thứ 2
+	public String thu(int n) {  
 		String t[] = {"", "Thu hai", "Thu ba", "Thu tu", "Thu nam", "Thu sau", "Thu bay", "Chu nhat"};
 	    int k = ((n % 7) + 7) % 7 + 1;
 	    return t[k];
 	}
+	//BTVN: in lịch năm n
 	public int soNgayTrongThang() {
 	    int max[] = {0,31,28,31,30,31,30,31,31,30,31,30,31};
 	    if ((y % 4 == 0 && y % 100 != 0) || y % 400 == 0)
@@ -136,5 +143,11 @@ public class Date {
 	            System.out.println();
 	    }
 	    System.out.println();
+	}
+	public void inNam(int n) {
+		for (int i = 1; i <= 12; i++) {
+		    Date thang = new Date(1, i, n);
+		    thang.inThang();
+		}
 	}
 }
