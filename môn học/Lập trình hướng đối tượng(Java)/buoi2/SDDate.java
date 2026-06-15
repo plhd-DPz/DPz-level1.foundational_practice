@@ -12,17 +12,17 @@ public class SDDate {
 		b.nhap();
 		b.in();
 		System.out.println("ngay sau khi cong 32000 ngay: ");
-		b=b.cong(32000);
+		b=b.congNgay(32000);
 		b.in();
 		System.out.println("125 ngay sau 8/6/2026 la " + a.thu(125));
 		Date ds[];
 		Scanner sc=new Scanner(System.in);
-		System.out.print("Nhap so phan tu: ");
+		System.out.print("Nhap so phan tu cho mang cac ngay: ");
 		int n=sc.nextInt();
 		ds=new Date[n];
 		for (int i=0;i<n;i++) {
 			ds[i]=new Date();
-			System.out.print("Nhap ngay thu "+(i+1)+": ");
+			System.out.println("Nhap ngay thu "+(i+1)+": ");
 			ds[i].nhap();
 		}
 		for (Date e : ds) e.in();
