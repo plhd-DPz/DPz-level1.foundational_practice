@@ -7,12 +7,12 @@ public class SDDiem {
 		System.out.println("Toa do diem a: "+a);
 		Diem b=new Diem();
 		System.out.println("Nhap toa do diem B: ");
-		b.nhap();
+		b.nhapDiem();
 		System.out.println("Toa do diem B: "+b);
-		Diem c=new Diem(-b.layX(),-b.layY());
+		Diem c=new Diem(-b.giaTriX(),-b.giaTriY());
 		System.out.println("Toa do diem C doi xung voi B qua goc toa do: "+c);
-		System.out.println("Khoang cach tu diem B den tam O la: "+b.kcach());
-		System.out.println("Khoang cach tu diem A den diem B la: "+a.kcach(b));
+		System.out.println("Khoang cach tu diem B den tam O la: "+b.khoangCach());
+		System.out.println("Khoang cach tu diem A den diem B la: "+a.khoangCach(b));
 	}
 
 }
