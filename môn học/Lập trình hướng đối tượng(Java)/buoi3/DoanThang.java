@@ -27,8 +27,8 @@ public class DoanThang implements Cloneable {
 		return "["+d1+";"+d2+"]";
 	}
 	public void nhap() {
-		System.out.println("Nhập tọa độ d1: "); d1.nhap();
-		System.out.println("Nhập tọa độ d2: "); d2.nhap();
+		System.out.println("Nhap toa do d1: "); d1.nhap();
+		System.out.println("Nhap toa do d2: "); d2.nhap();
 	}
 	public Object clone() throws CloneNotSupportedException{
 		return super.clone();
