@@ -6,17 +6,17 @@ public class SDPhanSo {
 
 	public static void main(String[] args) {
 		PhanSo a=new PhanSo(3,7);
-		System.out.print("Phan so a: "+a);
+		System.out.println("Phan so a: "+a);
 		PhanSo b=new PhanSo(4, 9);
-		System.out.print("Phan so b: "+b);
+		System.out.println("Phan so b: "+b);
 		PhanSo x=new PhanSo();
-		System.out.print("Nhap phan so x: ");
+		System.out.println("Nhap phan so x: ");
 		x.nhap();
 		PhanSo y=new PhanSo();
-		System.out.print("Nhap phan so y: ");
+		System.out.println("Nhap phan so y: ");
 		y.nhap();
-		System.out.print("Gia tri nghich dao cua phan so x: "+x.giaTriNghichDao());
-		System.out.print("Tong cua phan so x va y la: "+x.cong(y));
+		System.out.println("Gia tri nghich dao cua phan so x(neu co): "+x.giaTriNghichDao());
+		System.out.println("Tong cua phan so x va y la: "+x.cong(y));
 		PhanSo ds[];
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Nhap so phan tu: ");
@@ -33,10 +33,8 @@ public class SDPhanSo {
 			tong=tong.cong(ds[i]);
 			if (max.giaTriThuc()<ds[i].giaTriThuc()) max=ds[i];
 		}
-		System.out.print("Tong cac phan so la: "+tong);
+		System.out.println("Tong cac phan so la: "+tong);
 		System.out.println("Phan so lon nhat la: "+max);
-		
-		tong.in();
 		for (int i=0;i<n-1;i++) {
 		    for (int j=i+1;j<n;j++) {
 		        if (ds[i].giaTriThuc() > ds[j].giaTriThuc()) {

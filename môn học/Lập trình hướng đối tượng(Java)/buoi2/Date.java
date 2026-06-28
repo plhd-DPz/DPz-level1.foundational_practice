@@ -13,6 +13,12 @@ public class Date {
 		d=d1;
 		m=m1;
 		y=y1;
+		if (!hopLe()) {
+			System.out.println("Ngay duoc truyen vao khong hop le!");
+			d=1;
+			m=1;
+			y=2026;
+		}
 	}
 	public Date(Date a) {
 		d=a.d;
@@ -28,12 +34,13 @@ public class Date {
 	public void nhap() {
 		Scanner sc=new Scanner(System.in);
 		do {
-			System.out.println("Nhap ngay: ");
+			System.out.print("Nhap ngay: ");
 			d=sc.nextInt();
-			System.out.println("Nhap thang: ");
+			System.out.print("Nhap thang: ");
 			m=sc.nextInt();
-			System.out.println("Nhap nam: ");
+			System.out.print("Nhap nam: ");
 			y=sc.nextInt();
+			if (!hopLe()) System.out.println("Ngay khong hop le, vui long nhap lai!");
 		} while (!hopLe());
 	}
 	public int layNgay() {
@@ -51,7 +58,7 @@ public class Date {
 		if (d>0 && m>0 && y>0 && m<13 && d<=max[m]) return true;
 		else return false;
 	}
-	public Date cong() {
+	public Date ngayHomSau() {
 		Date a=new Date(this);
 		a.d++;
 		if(!a.hopLe()) {
@@ -64,10 +71,10 @@ public class Date {
 		}
 		return a;
 	}
-	public Date cong(int n) {
+	public Date congNgay(int n) {
 		Date a=new Date(d,m,y);
 		for (int i=0;i<n;i++) {
-			a=a.cong();
+			a=a.ngayHomSau();
 		}
 		return a;
 	}
@@ -76,39 +83,46 @@ public class Date {
 		if (m!=a.m) return m<a.m;
 		return d<a.d;
 	}
+	public boolean ngaySau(Date a) {
+		if (y!=a.y) return y>a.y;
+		if (m!=a.m) return m>a.m;
+		return d>a.d;
+	}
 	public boolean equals(Date a) {
 	    return d == a.d && m == a.m && y == a.y;
 	}
 	public int khoangCachTuMoc() {
-	    Date moc = new Date(8,6,2026);     //biết 8/6/2026 là thứ 2
+	    Date moc = new Date(8,6,2026);
 	    if (this.equals(moc))
 	        return 0;
 	    int dem = 0;
 	    if (moc.ngayTruoc(this)) {
 	        Date a = new Date(moc);
 	        while (!a.equals(this)) {
-	            a = a.cong();
+	            a = a.ngayHomSau();
 	            dem++;
 	        }
 	        return dem;
 	    }
 	    Date a = new Date(this);
 	    while (!a.equals(moc)) {
-	        a = a.cong();
+	        a = a.ngayHomSau();
 	        dem++;
 	    }
 	    return -dem;
 	}
 	public String thu() {
 	    String t[] = {"", "Thu hai", "Thu ba", "Thu tu", "Thu nam", "Thu sau", "Thu bay", "Chu nhat"};
-	    int thu = ((khoangCachTuMoc() % 7) + 7) % 7 + 1; //quy ước Thứ 2 là 1
+	    int thu = ((khoangCachTuMoc() % 7) + 7) % 7 + 1; 
 	    return t[thu];
 	}
-	public String thu(int n) {  //n ngày nữa là thứ mấy tính từ ngày 8/6/2026
+	//BTVN: n ngày nữa là thứ mấy tính từ ngày 8/6/2026, biết 8/6/2026 là thứ 2
+	public String thu(int n) {  
 		String t[] = {"", "Thu hai", "Thu ba", "Thu tu", "Thu nam", "Thu sau", "Thu bay", "Chu nhat"};
 	    int k = ((n % 7) + 7) % 7 + 1;
 	    return t[k];
 	}
+	//BTVN: in lịch năm n
 	public int soNgayTrongThang() {
 	    int max[] = {0,31,28,31,30,31,30,31,31,30,31,30,31};
 	    if ((y % 4 == 0 && y % 100 != 0) || y % 400 == 0)
@@ -129,5 +143,11 @@ public class Date {
 	            System.out.println();
 	    }
 	    System.out.println();
+	}
+	public void inNam(int n) {
+		for (int i = 1; i <= 12; i++) {
+		    Date thang = new Date(1, i, n);
+		    thang.inThang();
+		}
 	}
 }
