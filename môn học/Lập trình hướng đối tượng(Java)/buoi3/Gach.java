@@ -24,28 +24,24 @@ public class Gach {
 	}
 	public void nhap() {
 		Scanner sc=new Scanner(System.in);
-		System.out.println("Nhap ma so: ");
+		System.out.print("Nhap ma so: ");
 		mSo=sc.nextLine();
-		System.out.println("Nhap mau: ");
+		System.out.print("Nhap mau: ");
 		mau=sc.nextLine();
-		System.out.println("Nhap so luong: ");
+		System.out.print("Nhap so luong: ");
 		sl=sc.nextInt();
-		System.out.println("Nhap chieu dai: ");
+		System.out.print("Nhap chieu dai: ");
 		cd=sc.nextInt();
-		System.out.println("Nhap chieu ngang: ");
+		System.out.print("Nhap chieu ngang: ");
 		cn=sc.nextInt();
-		System.out.println("Nhap gia: ");
+		System.out.print("Nhap gia: ");
 		gia=sc.nextLong();
 	}
 	 public void in() {
 	        System.out.println(toString());
 	    }
 	 public String toString() {
-        return "Ma so: " + mSo +
-               ", Mau: " + mau +
-               ", So luong: " + sl +
-               ", Kich thuoc: " + cd + "x" + cd +
-               ", Gia hop: " + gia;
+        return "Ma so: "+mSo+", Mau: "+mau+", So luong: "+sl+", Kich thuoc: "+cd+"x"+cn+", Gia hop: "+gia;
 	 }
 	 public long layGia() {
 		 return gia;
