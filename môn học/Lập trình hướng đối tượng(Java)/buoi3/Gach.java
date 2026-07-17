@@ -3,11 +3,11 @@ package buoi3;
 import java.util.Scanner;
 
 public class Gach {
-	private String mSo, mau;
+	private String maSo, mau;
 	private int sl, cd, cn;
 	private long gia;
 	public Gach() {
-		mSo=new String();
+		maSo=new String();
 		mau=new String();
 		sl=0;
 		cd=0;
@@ -15,7 +15,7 @@ public class Gach {
 		gia=0;
 	}
 	public Gach(Gach g) {
-		mSo=new String(g.mSo);
+		maSo=new String(g.maSo);
 		mau=new String(g.mau);
 		sl=g.sl;
 		cd=g.cd;
@@ -25,7 +25,7 @@ public class Gach {
 	public void nhap() {
 		Scanner sc=new Scanner(System.in);
 		System.out.print("Nhap ma so: ");
-		mSo=sc.nextLine();
+		maSo=sc.nextLine();
 		System.out.print("Nhap mau: ");
 		mau=sc.nextLine();
 		System.out.print("Nhap so luong: ");
@@ -37,30 +37,29 @@ public class Gach {
 		System.out.print("Nhap gia: ");
 		gia=sc.nextLong();
 	}
-	 public void in() {
-	        System.out.println(toString());
-	    }
-	 public String toString() {
-        return "Ma so: "+mSo+", Mau: "+mau+", So luong: "+sl+", Kich thuoc: "+cd+"x"+cn+", Gia hop: "+gia;
-	 }
-	 public long layGia() {
-		 return gia;
-	 }
-    public float giaBanLe() {
-    	float giaVien=(float)gia/sl;
-    	return giaVien*1.2f;
-    }
-    public int dtVien() {
-    	return cd*cn;
-    }
-    public int dtToiDa() {
-    	return sl*dtVien();
-    }
-    public int soLuongHop(int d, int n) {
-    	int dtNen=d*n;
-    	int dtHop=dtToiDa();
-    	int kq=dtNen/dtHop;
-    	if (dtNen%dtHop!=0) kq++;
-    	return kq;
-    }
+	public void in() {
+		System.out.println("Ma so: "+maSo+", Mau: "+mau+", So luong: "+sl+", Kich thuoc: "+cd+"x"+cn+", Gia hop: "+gia);
+	}
+	public String toString() {
+		return "Ma so: "+maSo+", Mau: "+mau+", So luong: "+sl+", Kich thuoc: "+cd+"x"+cn+", Gia hop: "+gia;
+	}
+	public long layGia() {
+		return gia;
+	}
+	public float giaBanLe() {
+		float giaVien=(float) gia/sl;
+		return giaVien*1.2f;
+	}
+	public int dtVien() {
+		return cd*cn;
+	}
+	public int dtToiDa() {
+		return sl*dtVien();
+	}
+	public int soLuongHop(int d, int n) {
+	    int vienTheoCD=(d+cd-1)/cd;
+	    int vienTheoCN=(n+cn-1)/cn;
+	    int tongVien = vienTheoCD * vienTheoCN;
+	    return (tongVien+sl-1)/sl;
+	}
 }

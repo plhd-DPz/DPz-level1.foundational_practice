@@ -30,9 +30,9 @@ public class SDGach {
         ds[viTri].in();
         System.out.println("\nChi phi lot nen 5m x 20m:");
         for (int i = 0; i < n; i++) {
-            int soHop=ds[i].soLuongHop(5, 20);
-            long chiPhi=soHop*ds[i].layGia();
-            System.out.println("Loai gach "+(i+1)+": "+chiPhi);
+            long soHop = ds[i].soLuongHop(500, 2000);
+            long chiPhi = soHop * ds[i].layGia();
+            System.out.println("Loai gach "+(i+1)+ ": "+chiPhi);
         }
     }
 }
